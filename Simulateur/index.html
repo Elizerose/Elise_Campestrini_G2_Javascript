@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=Beaufort+for+LOL+Bold" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulateur</title>
+</head>
+<body>
+    
+    <h1>Simulateur de Combat</h1>
+
+    <p class="invisible" id="Error">Les noms ne doivent ni être identiques ni être vides.</p>
+
+    <!-- Formulaire -->
+    <form action="">
+        <div id="inputBox">
+            <div>
+                <label for="player1">Nom Guerrier 1</label>
+                <input type="text" placeholder="Nom du Guerrier 1" id="name1">
+            </div>
+            <div>
+                <label for="player2">Nom Guerrier 2</label>
+                <input type="text" placeholder="Nom du Guerrier 2" id="name2">
+            </div>
+        </div>
+        
+        <input type="submit" value="Jouer" id="submit">
+    </form>
+
+    <!-- Section du jeu -->
+    <section>
+    </section>
+
+
+    <script src="Simulateur.js"></script>
+</body>
+</html>

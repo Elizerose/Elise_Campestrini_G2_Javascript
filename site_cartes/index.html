@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=Beaufort+for+LOL+Bold" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Site jeu de cartes</title>
+</head>
+<body>
+    
+    <header>
+        <ul>
+            <li id="DarkMode"><i class="fa-solid fa-moon"></i></li>
+        </ul>
+    </header>
+
+    <div id="HeaderTriangle"></div>
+
+    <!-- ------------------------------------ COLLECTION -------------------------------- -->
+    <section id="collection">
+
+        <h2>Votre collection</h2>
+
+        <!-- ONGLETS -->
+        <ul id="ul_collection">
+            <li class="tab tabChampions tabActive">Champions</li>
+            <li class="tab tabObjets">Objets</li>
+            <li class="tab tabAutre">Autre</li>
+        </ul>
+
+        <!-- CONTENU CHAMPIONS -->
+        <div class="content Active" id="Champions">
+            <div class="cardsBox">
+                <img src="img/Cards/Braum.png" alt="Braum">
+                <img src="img/Cards/Elise.png" alt="Elise">
+                <img src="img/Cards/Yasuo.png" alt="Yasuo">
+            </div>
+            
+
+        </div>
+
+        <!-- CONTENU OBJETS -->
+        <div class="content" id="Objets">
+            <div class="cardsBox">
+                <img src="img/Cards/bouclier.png" alt="Braum">
+                <img src="img/Cards/hache.png" alt="Elise">
+                <img src="img/Cards/arme.png" alt="Yasuo">
+            </div>
+            
+
+        </div>
+
+        <!-- CONTENU AUTRE -->
+        <div class="content" id="Autre">
+            <div class="cardsBox">
+                <img src="img/Cards/Yeti.png" alt="Yeti">
+                <img src="img/Cards/poro.png" alt="Poro">
+                <img src="img/Cards/chat.png" alt="Chat">
+            </div>
+            
+        </div>
+
+    </section>
+    
+    <img src="img/separator.png" alt="separateur" class="separator">
+
+
+    <!-- ------------------------------------ INSCRIPTION -------------------------------- -->
+    
+    <section>
+        <h2>S'inscrire</h2>
+
+        <ul id="errorInfos" class= "invisible">
+        </ul>
+
+        <p id="sucessBox" class="invisible">Formulaire envoyé !</p>
+
+        <form id="myForm" action="">
+            <div>
+                <label for="pseudo">Pseudo</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Votre adresse mail">
+            </div>
+            <div>
+                <label for="birthday">Date de naissance</label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" placeholder="Votre mot de passe">
+            </div>
+            <div>
+                <label for="passwordConfirmation">Confirmation du mot de passe</label>
+                <input type="password" name="password1" id="passwordConfirmation" placeholder="Votre mot de passe">
+            </div>
+            <div>
+                <label for="Genre">Votre genre</label>
+                <select name="Genre" id="Genre">
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                    <option value="Rien">Je ne sais pas</option>
+                </select>
+            </div>
+            <div>
+                <label for="Oui">Recevoir les NewsLetters ? </label>
+                <div id="NewletterRadio">
+                    <div>
+                        <input type="radio" name="notifs" id="Oui" value="Oui" checked="checked">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="notifs" id="Non" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+                
+            </div>
+
+            <input type="submit" value="S'inscrire" id="submit" class="buttonStyle">
+        </form>
+    </section>
+
+
+    <footer>
+        <p>Réalisé par Elise Campestrini A1 G2 sur le theme de League of Legends (Runterra).</p>
+    </footer>
+
+
+    <script src="js/collection.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/darkMode.js"></script>
+
+    <!-- Librairie pour icons -->
+    <script src="https://kit.fontawesome.com/c2ae8767dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

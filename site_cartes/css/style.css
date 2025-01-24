@@ -1,0 +1,308 @@
+*
+{
+    margin : 0px;
+    padding : 0px;
+}
+
+i
+{
+    font-size: 1.5em;
+}
+
+.borderRed
+{
+    border : 2px solid red;
+}
+.borderGreen
+{
+    border : 2px solid rgb(0, 255, 34);
+}
+
+
+
+
+header, footer
+{
+    background-color: #16171b;
+}
+
+header
+{
+    padding-top: 2em;
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: end;
+    padding-right: 10em;
+}
+
+header li
+{
+    list-style: none;
+}
+
+#HeaderTriangle
+{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 60px solid #16171b;
+    border-right : 960px solid transparent;
+    border-left : 960px solid transparent;
+    position: absolute;
+    top: 5em;
+}
+
+body
+{
+    background-color: #0a0a0c;
+    color : #927345;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+footer
+{
+    width: 100%;
+    margin-top: 10em;
+    padding:3em;
+    text-align: center;
+}
+
+
+.separator
+{
+    width: 60%;
+}
+
+#collection
+{
+    margin-top: 5em;
+}
+
+.content img
+{
+    width: 20%;
+}
+
+section
+{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Collection */
+
+
+h2
+{
+    margin-top: 3em;
+    font-size: 2em;
+    font-family: "Beaufort for LOL Bold";
+}
+
+#ul_collection
+{
+    margin-top: 10em;
+    display: flex;
+    gap: 3em;
+    list-style: none;
+}
+
+.tab
+{
+    font-size: 1.3em;
+    padding-top: 0.9em;
+    width: 12em;
+    height: 2em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.2em;
+    text-align: center;
+    background-color: #16171b;
+}
+
+.tabActive
+{
+    background-color: #24252b;
+    font-size: 1.5em;
+    padding-top: 0.9em;
+    width: 13em;
+}
+
+.cardsBox
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.content
+{
+    display: none;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    gap: 5em;
+    width: 85%;
+}
+
+.Active
+{
+    display: block;
+}
+
+
+/* Formulaire */
+
+label
+{
+    margin-bottom: 0.5em;
+}
+
+form
+{
+    width: 40%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    gap: 1.8em;
+    border: 0.5px solid rgb(174 145 75);
+    padding: 5%;
+    align-items: center;
+}
+
+input
+{
+    padding: 0.8em;
+    color: #16171b;
+}
+
+#displayFlex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#alignCenter
+{
+    align-items: center;
+}
+
+form div
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.buttonStyle
+{
+    background-color: #927345;
+    color :#16171b;
+}
+
+
+#submit
+{
+    border-radius: 5em;
+    border : 0px;
+    font-size: 0.8em;
+    width: 50%;
+    align-self: center;
+    margin-top: 5em;
+}
+#sucessBox, #errorInfos
+{
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 45.5%;
+    margin-top: 5em;
+}
+
+#sucessBox
+{
+    
+    background-color: rgb(212, 250, 205);
+    border: 1px solid rgb(0, 255, 34);
+}
+
+#sucessBox li
+{
+    color: rgb(46, 184, 65);
+}
+
+
+#errorInfos 
+{
+    background-color: rgb(250, 205, 205);
+    border: 1px solid red;
+}
+
+#errorInfos li
+{
+    color: rgb(190, 36, 36);
+}
+
+.invisible
+{
+    display:none;
+}
+
+#NewletterRadio, #NewletterRadio div
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#NewletterRadio
+{
+    margin-top: 1em;
+    gap: 3em;
+}
+
+#NewletterRadio div
+{
+    gap: 1em;
+}
+
+
+
+
+/* DARK MODE */
+
+
+.DarkModeForm
+{
+    border-color: rgb(20 85 91);
+}
+.DarkModeBody
+{
+    background-color: aliceblue;
+    color: rgb(20 85 91);
+}
+
+.DarkModeTab
+{
+    background-color: rgb(145, 168, 187);
+}
+
+.DarkModeSubmit
+{
+    background-color: rgb(20 85 91);
+    color:aliceblue;
+}
+
+.DarkModeHeader
+{
+    color:aliceblue;
+}
